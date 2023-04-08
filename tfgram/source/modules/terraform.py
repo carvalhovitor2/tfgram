@@ -19,6 +19,6 @@ class TerraformParser:
             with open(file, 'r') as f:
                 try:
                     hcl.load(f)
-                except hcl.parser.ParseError as e:
+                except ValueError as e:
                     raise ValueError(f"Invalid Terraform file ({file}): {e}")
 
