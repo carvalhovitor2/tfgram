@@ -8,6 +8,3 @@ class NodeFactory:
         self.files = files
 
     def _calculate_dependencies(self):
-        
-
-
