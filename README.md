@@ -1,37 +1,36 @@
-\# TFGRAM
+# TFGRAM
 
-!\[TFGRAM-logo\](./logo.png)
 
 TFGRAM is a powerful and user-friendly command-line tool designed to help you generate diagrams from Terraform files. It leverages the Diagrams Python library and the HCL library to create detailed visual representations of your infrastructure. Although primarily focused on AWS infrastructure, TFGRAM plans to expand its capabilities to accommodate a broader range of platforms in the future.
 
-\## Features
+## Features
 
 - Automatically generate diagrams from Terraform files
 - Supports AWS infrastructure components
 
-\## Installation
+## Installation
 
 Install TFGRAM using pip:
 
-\```bash
+```bash
 pip install tfgram
-\```
+```
 
-\## Usage
+## Usage
 
 To create a diagram from your Terraform files, simply run the following command in your terminal:
 
-\```bash
+```bash
 tfgram -f /path/to/your/terraform/files
-\```
+```
 
 For a complete list of command-line options, run:
 
-\```bash
+```bash
 tfgram --help
-\```
+```
 
-\## Contributing
+## Contributing
 
 We appreciate any contributions to the TFGRAM project. If you'd like to contribute, please follow these steps:
 
@@ -40,11 +39,11 @@ We appreciate any contributions to the TFGRAM project. If you'd like to contribu
 3. Implement your changes
 4. Submit a pull request
 
-\## License
+## License
 
 TFGRAM is licensed under the MIT License. See the \[LICENSE\](./LICENSE) file for more details.
 
-\## Future Plans
+## Future Plans
 
 - Support for additional cloud platforms
 - Enhanced customization options for diagrams
