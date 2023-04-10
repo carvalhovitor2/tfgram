@@ -1,10 +1,10 @@
 from source.modules.argparser import parse_arguments
-from source.modules.terraform import TerraformParser
+from source.modules.node_factory import NodeFactory
 
 def main():
     args = parse_arguments()
-    terraform_parser = TerraformParser(args.files)
-    terraform_parser.validate()
+    nodes = NodeFactory(args.files)
+    terraform_resources = nodes._calculate_dependencies()
 
 if __name__ == "__main__":
     main()

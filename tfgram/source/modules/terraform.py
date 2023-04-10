@@ -1,5 +1,5 @@
 import os
-import hcl
+import hcl2
 
 class TerraformParser:
     def __init__(self, files):
@@ -18,7 +18,7 @@ class TerraformParser:
 
             with open(file, 'r') as f:
                 try:
-                    hcl.load(f)
+                    hcl2.load(f)
                 except ValueError as e:
                     raise ValueError(f"Invalid Terraform file ({file}): {e}")
 
@@ -27,6 +27,6 @@ class TerraformParser:
         parsed_files = {}
         for file in self.files:
             with open(file, 'r') as f:
-                parsed_file = hcl.load(f)
+                parsed_file = hcl2.load(f)
             parsed_files[file] = parsed_file
         return parsed_files
