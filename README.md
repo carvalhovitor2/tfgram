@@ -41,7 +41,7 @@ We appreciate any contributions to the TFGRAM project. If you'd like to contribu
 
 ## License
 
-TFGRAM is licensed under the MIT License. See the \[LICENSE\](./LICENSE) file for more details.
+TFGRAM is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
 ## Future Plans
 
